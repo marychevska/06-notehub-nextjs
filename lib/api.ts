@@ -13,7 +13,7 @@ interface NewNote {
 }
 
 const myToken = process.env.NEXT_PUBLIC_NOTEHUB_TOKEN;
-axios.defaults.baseURL = "https://notehub-public.goit.study/api";
+axios.defaults.baseURL = "https://next-docs-api.onrender.com";
 axios.defaults.headers.common["Authorization"] = `Bearer ${myToken}`;
 
 export async function fetchNotes(
